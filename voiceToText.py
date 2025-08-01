@@ -5,66 +5,6 @@ import numpy as np
 import speech_recognition as sr
 from textToSpeech import speak
 
-# locked = False #locks unlocks online speech recognition model based on internet connection
-# #internet available = unlocked
-# #internet not available = locked
-# model = Model("model")#loading the model for offline speech recognition once
-
-# #offline model for speech recognition
-
-                
-# #online model for speech recognition
-# def online_recognition():
-
-#     r = sr.Recognizer()
-
-#     with sr.Microphone() as source:
-#         print("Listening...")
-#         r.adjust_for_ambient_noise(source)
-#         audio = r.listen(source)
-
-#     try:
-#         print("Recognizing...")
-#         recognized_text = r.recognize_google(audio, language="en-in")
-#         print("You: " + recognized_text)
-#         return recognized_text
-#     except sr.UnknownValueError:
-#         print("Google Web Speech API could not understand audio")
-#         return "error--1~`"
-#     except sr.RequestError as e:
-#         print(f"Could not request results from Google Web Speech API {e}")
-#         return "error--1~`"
-
-
-# def commands():
-#     """Listen for a command and return the recognized text."""
-
-#     text = ""
-#     global locked # Use global variable to track lock status
-   
-#     # Check if the online recognition is available
-#     if not locked:
-#         text = online_recognition()
-#         if(text == "error--1~`"):
-#            locked = True
-#            speak("Sorry sir, Online mode not available.I'll switch you to offline mode.")
-#            speak("Please repeat your command.")
-#     elif locked: # Use offline recognition if online fails
-#         text = offline_recognition() 
-#         while not text:
-#             speak("No commands")
-#             text = offline_recognition()
-       
-#     # print(f"Recognized text: {text}")
-#     return text.lower()
-
-# if __name__ == "__main__":
-    # commands()from vosk import Model, KaldiRecognizer
-import sounddevice as sd
-import json
-import numpy as np
-import speech_recognition as sr
-from textToSpeech import speak
 
 # Global flag to switch between online and offline mode
 locked = False
