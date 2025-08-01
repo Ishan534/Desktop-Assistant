@@ -59,7 +59,7 @@ This will create an executable in the `dist/` folder.
 
 ## 📩 Contact
 
-Developed by **Nishant**. Feel free to reach out at [your email or GitHub](https://github.com/yourprofile).
+Developed by **Nishant**. Feel free to reach out at nishant.kum.dev@gamil.com
 
 ---
 ⚡ Happy Coding! ⚡
